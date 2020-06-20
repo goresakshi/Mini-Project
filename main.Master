@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="AlumniTracking1.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+            </asp:ContentPlaceHolder>
+    </title>
+    <link href="style1.css" rel="stylesheet" />
+     <style type="text/css">
+        ul
+        {
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:#333;
+
+        }
+        li
+        {
+            float:left;
+        }
+        li a
+        {
+            display:inline-block;
+            color:white;
+            text-align:center;
+            padding:14px 16px;
+            text-decoration:none;
+        }
+        li a:hover
+        {
+            background-color:red;
+        }
+        ul.topnav li a.active
+        {
+            background-color:#4CAF50;
+        }
+        li.right{
+            float:right;
+            background-color:red;
+        }
+        li.right1{
+            float:right;
+            
+        }
+        #copyright
+        {
+            background-color:black;
+            color:white;
+            width:100%;
+            height:5%;
+            padding:1px;
+            margin-top:650px;
+        }
+        .auto-style1 {
+            height: 51px;
+        }
+        .auto-style2 {
+            height: 27px;
+        }
+        .auto-style3 {
+            width: 77px;
+            height: 33px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 728px">
+    <form id="form1" runat="server">
+        <div>
+            <ul class="auto-style1">
+                <li><a class="active" href="Home.aspx">Home</a></li>
+                <li><a href="Search.aspx">Search</a></li>
+                <li><a href="ManageEvents.aspx">Manage Events</a></li>
+                <li><a href="VerifyAlumni.aspx">Verify Alumni</a></li>
+                <li class="right1"><a href="#Notifications"><img src="bellicon.png" class="auto-style2" /></a></li>
+                <li class="right"><a href="AboutUs.aspx" class="auto-style3">About Us</a></li>
+                <li class="right"><a href="ContactUs.aspx" class="auto-style3">Contact Us</a></li>
+                <li class="right"><a href="Login.aspx" class="auto-style3">Logout</a></li>
+            </ul>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="copyright">
+                <h4>All right is reserved by programming passion @2020</h4>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
